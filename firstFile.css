@@ -1,0 +1,543 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+body {
+  height: 100vh;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar .float-Left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: 25px;
+}
+
+.navBar .float-Left .bar {
+  cursor: pointer;
+}
+
+.navBar .float-Left .menuItems {
+  position: relative;
+  display: inline-block;
+}
+
+.navBar .float-Left .menuItems .div {
+  position: absolute;
+  background: #fff;
+  min-width: 265px;
+  padding: 20px;
+  height: 100vh;
+  top: -27px;
+  z-index: 9999;
+  right: 350px;
+}
+
+.navBar .float-Left .menuItems .div .closeMenu .close {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.navBar .float-Left .menuItems .div .sideBar ul li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.navBar .float-Right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-right: 10px;
+  padding: 13px;
+}
+
+.navBar .float-Right .cartDiv {
+  position: relative;
+}
+
+.navBar .float-Right .cartDiv #det {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  pointer-events: none;
+  background: #ff7d1a;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 400;
+  padding: 0 8px;
+  border-radius: 9px;
+}
+
+.navBar .float-Right .cartDiv .cart {
+  cursor: pointer;
+}
+
+.navBar .float-Right .cartDiv .cartItems {
+  z-index: 999;
+  position: absolute;
+  background: #ffffff;
+  top: 44px;
+  height: 250px;
+  right: -55px;
+  border-radius: 8px;
+  width: 350px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .Ct {
+  padding: 20px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .Ct .cartText {
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .dash {
+  min-width: 200px;
+  border: none;
+  border-bottom: 1px solid #b6bcc8;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv {
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .emptyFlex h5 {
+  color: #68707d;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .productDiv {
+  width: 15%;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .productDiv .productImg {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .fullDetails .productName {
+  color: #68707d;
+  font-size: 12.5px;
+  margin-bottom: 5px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .fullDetails .calculation {
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .fullDetails .calculation .productPrice {
+  color: #68707d;
+  font-size: 12.5px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .fullDetails .calculation .finalPrice {
+  font-size: 12.5px;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .cartItemFlex .cartRemoveDiv .remove {
+  cursor: pointer;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .checkout {
+  width: 100%;
+}
+
+.navBar .float-Right .cartDiv .cartItems .flexDiv .checkout .submitBtn {
+  text-align: center;
+  background: #ff7d1a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #f7f8fd;
+  cursor: pointer;
+}
+
+.navBar .float-Right .profileDiv .avatar {
+  width: 24px;
+}
+
+.navBar .float-Right .profileDiv .avatar:hover {
+  border: 2.5px solid #ff7d1a;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.under {
+  display: none;
+}
+
+.displayInv {
+  width: 100%;
+}
+
+.displayInv .displayLeft {
+  position: relative;
+}
+
+.displayInv .displayLeft .mainClick .displays {
+  display: none;
+}
+
+.displayInv .displayLeft .displayGroup {
+  width: 100%;
+  display: flex;
+}
+
+.displayInv .displayLeft .displayGroup .display {
+  width: 100%;
+  margin-top: -36px;
+  z-index: -999;
+}
+
+.displayInv .displayLeft .displayGroup .img1, .displayInv .displayLeft .displayGroup .img2, .displayInv .displayLeft .displayGroup .img3 {
+  display: none;
+}
+
+.displayInv .displayLeft .carouselBtns {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.displayInv .displayLeft .carouselBtns .carousel {
+  margin: 0 10px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  vertical-align: middle;
+}
+
+.displayInv .displayLeft .carouselBtns .carousel .click {
+  background: white;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.displayInv .displayRight {
+  margin: 20px 20px 0 20px;
+}
+
+.displayInv .displayRight .heading {
+  text-transform: uppercase;
+  color: #ff7d1a;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.displayInv .displayRight .specificHeading {
+  font-size: 22px;
+  text-transform: capitalize;
+  width: 80%;
+}
+
+.displayInv .displayRight .itemDesc {
+  margin-top: 20px;
+  color: #68707d;
+  font-size: 13px;
+  font-weight: 550;
+  line-height: 22px;
+}
+
+.displayInv .displayRight .price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+  margin-bottom: 12.5px;
+}
+
+.displayInv .displayRight .price .newPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.displayInv .displayRight .price .newPrice .currentPrice {
+  font-size: 17px;
+}
+
+.displayInv .displayRight .price .newPrice .discount {
+  background: #ffede0;
+  color: #ff7d1a;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.displayInv .displayRight .price .oldPrice {
+  color: #b6bcc8;
+}
+
+.displayInv .displayRight .cartDiv .cartFig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 15px;
+  width: 100%;
+  background: #f7f8fd;
+  border-radius: 10px;
+}
+
+.displayInv .displayRight .cartDiv .iconM, .displayInv .displayRight .cartDiv .iconP {
+  cursor: pointer;
+}
+
+.displayInv .displayRight .cartDiv .ToCart {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  background: #ff7d1a;
+  margin: 15px 0 40px 0;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 3px 20px #ff7d1a;
+  cursor: pointer;
+}
+
+.displayInv .displayRight .cartDiv .ToCart .cartLogo {
+  width: 14px;
+}
+
+.displayInv .displayRight .cartDiv .ToCart .addCart {
+  font-weight: 550;
+}
+
+@media all and (min-width: 650px) {
+  .navBar {
+    padding: 5px;
+    max-width: 1300px;
+  }
+  .navBar .float-Left {
+    width: 100%;
+  }
+  .navBar .float-Left .bar {
+    display: none;
+  }
+  .navBar .float-Left .menuItems {
+    position: static;
+  }
+  .navBar .float-Left .menuItems .div {
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    animation-fill-mode: initial;
+  }
+  .navBar .float-Left .menuItems .div .closeMenu {
+    display: none;
+  }
+  .navBar .float-Left .menuItems .div .sideBar ul {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .navBar .float-Left .menuItems .div .sideBar ul li {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #68707d;
+    padding: 22px 0;
+  }
+  .navBar .float-Left .menuItems .div .sideBar ul li:hover {
+    border-bottom: 2px solid #ff7d1a;
+    transition: .1s ease-in-out;
+  }
+  .navBar .float-Right {
+    gap: 22px;
+    margin-right: 20px;
+    padding: 0;
+  }
+  .navBar .float-Right .cartDiv .cartItems {
+    box-shadow: 1px 1px 12px #b6bcc8;
+    top: 30px;
+    height: 230px;
+    right: -65px;
+    width: 260px;
+  }
+  .navBar .float-Right .cartDiv .cartItems .dash {
+    width: 100%;
+  }
+  .navBar .float-Right .cartDiv .cartItems .flexDiv {
+    height: 170px;
+  }
+  .under {
+    display: block;
+    border: none;
+    height: 0.5px;
+    background-color: #b6bcc8;
+    width: 83%;
+    margin: auto;
+    margin-top: -5px;
+    max-width: 1300px;
+  }
+  .displayInv {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    height: 50%;
+    margin: auto;
+    margin-top: 130px;
+    gap: 6%;
+    max-width: 880px;
+  }
+  .displayInv .displayLeft {
+    position: static;
+    width: 100%;
+  }
+  .displayInv .displayLeft .mainClick {
+    width: 100%;
+  }
+  .displayInv .displayLeft .mainClick .displays {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .displayInv .displayLeft .displayGroup {
+    gap: 10px;
+    width: 100%;
+  }
+  .displayInv .displayLeft .displayGroup .display {
+    width: 21%;
+    margin: auto;
+    margin-top: 20px;
+    z-index: auto;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .displayInv .displayLeft .displayGroup .display:hover {
+    opacity: 70%;
+    transition: .3s ease-in;
+    padding: 5px;
+  }
+  .displayInv .displayLeft .displayGroup .img1, .displayInv .displayLeft .displayGroup .img2, .displayInv .displayLeft .displayGroup .img3 {
+    display: inline-block;
+  }
+  .displayInv .displayLeft .carouselBtns {
+    display: none;
+  }
+  .displayInv .displayRight {
+    width: 100%;
+    align-self: center;
+  }
+  .displayInv .displayRight .heading {
+    margin-bottom: 20px;
+  }
+  .displayInv .displayRight .specificHeading {
+    font-size: 30px;
+  }
+  .displayInv .displayRight .itemDesc {
+    margin-top: 22px;
+  }
+  .displayInv .displayRight .price {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12.5px;
+  }
+  .displayInv .displayRight .price .newPrice .currentPrice {
+    font-size: 19px;
+  }
+  .displayInv .displayRight .cartDiv {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 15px 0;
+  }
+  .displayInv .displayRight .cartDiv .cartFig {
+    padding: 10px 10px;
+    width: 60%;
+  }
+  .displayInv .displayRight .cartDiv .ToCart {
+    gap: 18px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    box-shadow: 0 3px 15px #ff7d1a;
+  }
+  .displayInv .displayRight .cartDiv .ToCart .cartLogo {
+    width: 14px;
+  }
+  .displayInv .displayRight .cartDiv .ToCart .addCart {
+    font-weight: 550;
+  }
+}
+
+@media all and (min-width: 850px) {
+  .navBar .float-Left {
+    margin-left: 8%;
+    width: 100%;
+    gap: 8%;
+  }
+  .navBar .float-Left .menuItems .div .sideBar ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .navBar .float-Right {
+    gap: 22px;
+    margin-right: 8%;
+  }
+  .navBar .float-Right .profileDiv .avatar {
+    width: 35px;
+  }
+  .navBar .float-Right .cartDiv .cartItems {
+    top: 36px;
+    right: -127px;
+  }
+  .displayInv {
+    gap: 15%;
+  }
+}
+
+.none {
+  display: none;
+}
+
+@keyframes sideBar {
+  from {
+    opacity: 0;
+    right: 350px;
+  }
+  to {
+    opacity: 1;
+    right: -36px;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.85);
+  }
+}
+
+.fromSide {
+  animation: sideBar 1s ease-in .5s both;
+}
