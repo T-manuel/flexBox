@@ -539,5 +539,5 @@ body {
 }
 
 .fromSide {
-  animation: sideBar 1s ease-in .5s both;
+  animation: sideBar .8s ease-in both;
 }
